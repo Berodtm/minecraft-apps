@@ -22,41 +22,41 @@ function CordInputForm() {
       setFormData((prev) => ({
         ...prev,
         [name]: intValue, // Store the rounded integer
-        overworldX: Math.round(intValue / 8), // Convert and round
+        overworldX: Math.round(intValue * 8), // Convert and round
       }));
     } else if (name === 'netherY') {
       console.log('if statement fired is equal to NY');
       setFormData((prev) => ({
         ...prev,
         [name]: intValue,
-        overworldY: Math.round(intValue / 8),
+        overworldY: Math.round(intValue),
       }));
     } else if (name === 'netherZ') {
       console.log('if statement fired is equal to NZ');
       setFormData((prev) => ({
         ...prev,
         [name]: intValue,
-        overworldZ: Math.round(intValue / 8),
+        overworldZ: Math.round(intValue * 8),
       }));
     } else if (name === 'overworldX') {
       console.log('if statement fired is equal to OX');
       setFormData((prev) => ({
         ...prev,
         [name]: intValue,
-        netherX: Math.round(intValue * 8),
+        netherX: Math.round(intValue / 8),
       }));
     } else if (name === 'overworldY') {
       console.log('if statement fired is equal to OY');
       setFormData((prev) => ({
         ...prev,
         [name]: intValue,
-        netherY: Math.round(intValue * 8),
+        netherY: Math.round(intValue),
       }));
     } else if (name === 'overworldZ') {
       setFormData((prev) => ({
         ...prev,
         [name]: intValue,
-        netherZ: Math.round(intValue * 8),
+        netherZ: Math.round(intValue / 8),
       }));
     } else {
       // For any other inputs, just round the value
