@@ -4,10 +4,13 @@
 The Minecraft Portal Coordinate Converter is a tool designed to help players of Minecraft calculate corresponding portal locations between the Nether and the Overworld. This utility simplifies the process of finding precise portal positions to ensure accurate travel between these two dimensions in the game.
 
 ## Technology Used
-- **React**: The application is built using React, showcasing dynamic UI updates and state management.
+- **React**: The application is built using React, showcasing dynamic UI updates and state management using the useState hook.
+- **React Router**: Implemented for handling client-side routing, enabling navigation between different pages without a full page reload.
 - **Tailwind CSS**: For styling, Tailwind CSS is used to make the application responsive and visually appealing.
 - **Vite**: Used as the build tool for fast development and production builds.
-- **GitHub Pages**: Hosts the application, making it accessible worldwide.
+- **GitHub Pages**: Hosts the application, hosted as a static web page.
+
+
 
 ## Live Demo
 Experience the Minecraft Portal Coordinate Converter live: [Minecraft Apps Live Demo](https://berodtm.github.io/minecraft-apps/)
