@@ -85,7 +85,7 @@ function CordInputForm() {
   return (
     <>
       <div className='bg-blue-950 text-white text-lg font-bold py-4 px-6 shadow-md'>
-        <h1>Rob's Minecraft Coordinate Converter</h1>
+        <h1>Portal Coordinate Converter</h1>
       </div>
       <div className="bg-blue-50 overflow-auto p-4 shadow items-stretch">
       <p className='font-bold'>Enter the Overworld or Nether Coordinates to calculate the portal location.</p>
