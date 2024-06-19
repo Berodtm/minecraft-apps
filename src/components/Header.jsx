@@ -12,8 +12,8 @@ import {
   import { NavLink } from 'react-router-dom';
   
   const navigation = [
-    { name: 'PortalCalc', href: '/PortalCalc' },
-    { name: 'Page2', href: '/Page2' },
+    { name: 'Portal Calculator', href: '/PortalCalc' },
+    { name: 'Useful Links', href: '/UsefulLinksPage' },
     { name: 'Page3', href: '/Page3' },
     { name: 'Page4', href: '/Page4' },
   ];
@@ -28,7 +28,7 @@ import {
         <Disclosure as='nav' className='bg-gray-800'>
           {({ open }) => (
             <>
-              <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+              <div className=' px-2 sm:px-6 lg:px-8'>
                 <div className='relative flex h-14 items-center justify-between'>
                   <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                     {/* Mobile menu button*/}
@@ -93,7 +93,7 @@ import {
             </>
           )}
         </Disclosure>
-        <div className='bg-purple-50'>
+        <div className='bg-slate-300 '>
           <div> 
           {/* max-w-7xl mx-auto min-h-screen p-2 commented this out to test formatting*/}
             {props.children}
