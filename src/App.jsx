@@ -1,19 +1,27 @@
-import { useState } from 'react';
 import './App.css';
-import CordInputForm from './components/CordInputForm';
-
+import Header from './components/Header';
+import PortalCalc from './pages/PortalCalc';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
+import Page4 from './pages/Page4';
 function App() {
   return (
-    <div className='flex flex-col min-h-screen bg-slate-300'>
-      <div className='flex-grow'>
-        <CordInputForm />
-      </div>
-      <div className='bg-blue-100 overflow-auto p-4 shadow'>
-        <p className='text-xs'>
-          Page created by Rob Dunn to test out useState in React JS and to make something useful for my kids playing Minecraft. <br /><br />To make the experience easier on mobile I set the state to take away the number when tapping and to reinsert it when tapping off meaning the user does not have to delete the number and enter a new one taking advantage of Reacts persistent state. If you wish to see more or contact me you can visit my blog at <a title='Robs Blog' target='_blank' href='https://berodtm.github.io/robs-blog/'>https://berodtm.github.io/robs-blog/</a>.
-        </p>
-      </div>
-    </div>
+    <>
+      <BrowserRouter basename='/minecraft-apps'>
+      {/* I had to add basename to allow refresh on other pages */}
+      <Header>
+        <Routes>
+          <Route path='/' element={<PortalCalc />} />
+          <Route path='/PortalCalc' element={<PortalCalc />} />
+          <Route path='/Page2' element={<Page2 />} />
+          <Route path='/Page3' element={<Page3 />} />
+          <Route path='/Page4' element={<Page4 />} />
+          <Route path='*' element={<PortalCalc />} /> {/* Catch-all route */}
+        </Routes>
+      </Header>
+    </BrowserRouter>
+    </>
   );
 }
 
