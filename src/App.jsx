@@ -3,7 +3,7 @@ import Header from './components/Header';
 import PortalCalc from './pages/PortalCalc';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UsefulLinksPage from './pages/UsefulLinksPage';
-import Page3 from './pages/Page3';
+import MainUpdates from './pages/MainUpdates';
 import Page4 from './pages/Page4';
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route path='/' element={<PortalCalc />} />
           <Route path='/PortalCalc' element={<PortalCalc />} />
           <Route path='/UsefulLinksPage' element={<UsefulLinksPage />} />
-          <Route path='/Page3' element={<Page3 />} />
+          <Route path='/MainUpdates' element={<MainUpdates />} />
           <Route path='/Page4' element={<Page4 />} />
           <Route path='*' element={<PortalCalc />} /> {/* Catch-all route */}
         </Routes>

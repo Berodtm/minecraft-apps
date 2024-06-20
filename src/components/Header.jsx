@@ -14,7 +14,7 @@ import {
   const navigation = [
     { name: 'Portal Calculator', href: '/PortalCalc' },
     { name: 'Useful Links', href: '/UsefulLinksPage' },
-    { name: 'Page3', href: '/Page3' },
+    { name: 'Main Updates', href: '/MainUpdates' },
     { name: 'Page4', href: '/Page4' },
   ];
   
