@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer';
 
 const data = [
   { id: 1, name: 'Apple' },
@@ -15,27 +16,25 @@ function Page4() {
     const query = event.target.value.toLowerCase();
     setSearchQuery(query);
 
-    const filtered = data.filter(item => 
+    const filtered = data.filter((item) =>
       item.name.toLowerCase().includes(query)
     );
 
     setFilteredData(filtered);
   };
+  const mappedListItems = (item) => <li key={item.id}>{item.name}</li>;
 
   return (
     <div>
-        <p>Placeholder Page - testing</p>
+      <p>Page under construction.</p>
       <input
-        type="text"
-        placeholder="Search food..."
+        type='text'
+        placeholder='Search food...'
         value={searchQuery}
         onChange={handleSearch}
       />
-      <ul>
-        {filteredData.map(item => (
-          <li key={item.id}>{item.name}</li>
-        ))}
-      </ul>
+      <ul>{filteredData.map(mappedListItems)}</ul>
+      <Footer footerText='Placeholder page content is displayed here.' />
     </div>
   );
 }
