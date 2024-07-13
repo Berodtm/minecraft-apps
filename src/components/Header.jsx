@@ -8,9 +8,10 @@ import { NavLink } from 'react-router-dom';
 
 const navigation = [
   { name: 'Portal Calculator', href: '/PortalCalc' },
+  { name: 'Food', href: '/Food' },
   { name: 'Useful Links', href: '/UsefulLinksPage' },
   { name: 'Main Updates', href: '/MainUpdates' },
-  { name: 'Food', href: '/Food' },
+
 ];
 
 export default function Header(props) {

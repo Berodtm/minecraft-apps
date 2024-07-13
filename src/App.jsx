@@ -14,9 +14,10 @@ function App() {
         <Routes>
           <Route path='/' element={<PortalCalc />} />
           <Route path='/PortalCalc' element={<PortalCalc />} />
+          <Route path='/Food' element={<Food />} />
           <Route path='/UsefulLinksPage' element={<UsefulLinksPage />} />
           <Route path='/MainUpdates' element={<MainUpdates />} />
-          <Route path='/Food' element={<Food />} />
+          
           <Route path='*' element={<PortalCalc />} /> {/* Catch-all route */}
         </Routes>
       </Header>
