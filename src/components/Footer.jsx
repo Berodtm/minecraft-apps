@@ -5,6 +5,13 @@ const Footer = (props) => {
         {props.footerText}
         <br />
         <br />
+        {props.footerText2 && ( 
+          <>
+            {props.footerText2}
+            <br />
+            <br />
+          </>
+        )}
         If you wish to see more or contact me you can visit my blog at{' '}
         <a
           title='Robs Blog'

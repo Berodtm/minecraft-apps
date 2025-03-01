@@ -18,7 +18,7 @@ export default function Header(props) {
   return (
     <>
       <Disclosure as='nav' className='bg-gray-800'>
-        {({ open }) => (
+        {({ open, close }) => (
           <>
             <div className=' px-2 sm:px-6 lg:px-8'>
               <div className='relative flex h-14 items-center justify-between'>
@@ -68,6 +68,7 @@ export default function Header(props) {
                   <NavLink
                     key={item.name}
                     to={item.href}
+                    onClick={() => close()} 
                     className={({ isActive }) => {
                       return (
                         'block px-3 py-2 rounded-md text-base font-medium no-underline' +
